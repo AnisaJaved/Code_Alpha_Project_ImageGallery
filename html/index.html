@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+  <nav>
+    <h1>
+      Gallery images
+    </h1>
+    <ul>
+      <li><button onclick="filterImages('all')">All</button></li>
+      <li><button onclick="filterImages('beautiful')">Beautiful</button></li>
+      <li><button onclick="filterImages('creative')">Creative</button></li>
+      <li><button onclick="filterImages('cool')">Cool</button></li>
+      <li><button onclick="filterImages('awesome')">Awesome</button></li>
+    </ul>
+  </nav>
+  <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Search by name..." onkeyup="searchImages()">
+  </div>
+  <div class="gallery">
+    <div class="image-container beautiful creative">
+      <img src="../images/creative_tree.jpg" alt="Creative Tree">
+      <p>Creative Tree</p>
+    </div>
+    <div class="image-container cool beautiful">
+      <img src="../images/snowy_bike.jpg" alt="Snowy Bike">
+      <p>Snowy Bike</p>
+    </div>
+    <div class="image-container awesome cool">
+      <img src="../images/red_fashion.jpg" alt="Red Fashion">
+      <p>Red Fashion</p>
+    </div>
+    <div class="image-container awesome cool">
+      <img src="../images/andrea-davis.jpg" alt="Red Fashion">
+      <p>andrea-davis</p>
+    </div>
+    <div class="image-container awesome cool">
+      <img src="../images/annie-spratt.jpg" alt="Red Fashion">
+      <p>annie-spratt</p>
+    </div>
+    <div class="image-container awesome cool">
+      <img src="../images/duong-ngan.jpg" alt="Red Fashion">
+      <p>duong-ngan</p>
+    </div>
+    <div class="image-container awesome cool">
+      <img src="../images/keith-tanner.jpg" alt="Red Fashion">
+      <p>keith-tanner</p>
+    </div>
+    <div class="image-container awesome cool">
+      <img src="../images/martin-masson.jpg" alt="Red Fashion">
+      <p>martin-masson</p>
+    </div>
+  </div>
+  <script src="../js/script.js"></script>
+</body>
+
+</html>
